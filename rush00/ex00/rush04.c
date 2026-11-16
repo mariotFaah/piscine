@@ -6,17 +6,11 @@
 /*   By: mariotFaah <mariotFaah@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/14 17:24:27 by mariotFaah        #+#    #+#             */
-/*   Updated: 2026/11/15 09:43:42 by mariotFaah       ###   ########.fr       */
+/*   Updated: 2026/11/16 18:58:35 by mariotFaah       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void rush(int ln, int cl)
 {
@@ -72,19 +66,4 @@ void rush(int ln, int cl)
 		i++;
 	}
 
-}
-
-int		main(void)
-{
-
-	rush(5, 3);
-ft_putchar('\n');
-	rush(5, 1);
-ft_putchar('\n');
-	rush(1,1);
-ft_putchar('\n');
-	rush(1, 5);
-ft_putchar('\n');
-	rush(4,4);
-	return (0);
 }
